@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class KeywordList
 {
@@ -81,4 +81,8 @@ public class KeywordList
 
 		System.out.println(sb.toString());
 	}
+	
+    public Iterator<Keyword> iterator() {
+        return lst.iterator();
+    }
 }

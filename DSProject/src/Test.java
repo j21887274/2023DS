@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 public class Test {
 	
@@ -48,6 +49,16 @@ public class Test {
 //        while(itr.hasNext()) {
 //        	System.out.println(itr.next());
 //        }
+      //parameter需修改
+        //20231224
+      	GoogleQuery g = new GoogleQuery("0");
+      	try {
+      		HashMap<String, String> query = g.query();
+     		} catch (IOException e) {
+     			// TODO Auto-generated catch block
+     			e.printStackTrace();
+      	}
+      	
         
     }
 	

@@ -85,4 +85,8 @@ public class KeywordList
     public Iterator<Keyword> iterator() {
         return lst.iterator();
     }
+    //20231224
+    public ArrayList<Keyword> getList(){
+    	return lst;
+    }
 }

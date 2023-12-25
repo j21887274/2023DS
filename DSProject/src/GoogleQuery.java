@@ -11,7 +11,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 
-
 public class GoogleQuery 
 
 {
@@ -93,6 +92,11 @@ public class GoogleQuery
 					continue;
 				}
 				retVal.put(title, citeUrl);
+				//20231224
+				WebPage w1 = new WebPage(citeUrl,title);
+				WebNode wn = new WebNode(w1);
+				KeywordList lst = new KeywordList();
+				wn.setNodeScore(lst.getList());
 
 			} catch (IndexOutOfBoundsException e) {
 
